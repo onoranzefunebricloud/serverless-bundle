@@ -80,10 +80,10 @@ function loaders() {
     ]
   };
 
-  if(isLocal) {
+  if (isLocal) {
     loaders.rules.push({
       test: /\.node$/,
-      use: 'node-loader'
+      use: "node-loader"
     });
   } else {
     loaders.rules.push({
@@ -91,8 +91,8 @@ function loaders() {
       loader: "native-ext-loader",
       options: {
         rewritePath: "./vendor"
-      },
-    })
+      }
+    });
   }
 
   if (ENABLE_LINTING) {
@@ -118,15 +118,15 @@ function plugins() {
 
   if (copyFiles) {
     plugins.push(
-      new CopyWebpackPlugin(
-        copyFiles.map(function(data) {
+      new CopyWebpackPlugin({
+        patterns: copyFiles.map(function(data) {
           return {
             to: data.to,
             context: servicePath,
             from: path.join(servicePath, data.from)
           };
         })
-      )
+      })
     );
   }
 
