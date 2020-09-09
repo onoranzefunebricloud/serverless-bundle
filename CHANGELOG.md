@@ -1,3 +1,5 @@
+## [1.3.1](https://github.com/onoranzefunebricloud/serverless-bundle/compare/1.3.0...1.3.1) (2020-09-09)
+
 # [1.3.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/v1.2.5...1.3.0) (2020-09-09)
 
 
