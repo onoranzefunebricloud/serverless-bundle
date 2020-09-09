@@ -1,4 +1,6 @@
-# @onoranzefunebricloud/serverless-bundle [![Build Status](https://travis-ci.com/AnomalyInnovations/serverless-bundle.svg?branch=master)](https://travis-ci.com/AnomalyInnovations/serverless-bundle) [![npm](https://img.shields.io/npm/v/serverless-bundle.svg)](https://www.npmjs.com/package/serverless-bundle)
+# @onoranzefunebricloud/serverless-bundle 
+
+![codebuild-prod](https://codebuild.eu-central-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiWS9yU0l1c1dvcUgxa3NIb0RldkxaVmptK3ZqSG56RWp2QTlyU1IzOVk2RXh0LzBGZnlTdS9QR0hHVUZlWUEvMXFIMXhOZkl1TUJjeTRwTnVld1NqUjlzPSIsIml2UGFyYW1ldGVyU3BlYyI6Imdzd3gwbG5GMW82L21KMzUiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
 An extension of the [serverless-webpack](https://www.github.com/serverless-heaven/serverless-webpack) plugin. This plugin bundles your Node.js Lambda functions with sensible defaults so you **don't have to maintain your own Webpack configs**.
 
