@@ -14,10 +14,11 @@ phases:
       - echo Installing codebuild-extras...
       - curl -fsSL https://raw.githubusercontent.com/thii/aws-codebuild-extras/master/install >> extras.sh
       - . ./extras.sh
-      - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-  build:
-    commands:
-      - npm install
-      - npm run test-scripts
-      - npm run release
-      - rm ~/.npmrc
+      - 
+      # - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+  # build:
+  #   commands:
+  #     - npm install
+  #     - npm run test-scripts
+  #     - npm run release
+  #     - rm ~/.npmrc
