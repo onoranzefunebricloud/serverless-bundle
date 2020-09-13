@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const slsw = require("serverless-webpack");
 const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const WebpackShellPlugin = require("webpack-shell-plugin");
+const WebpackBinPermission = require("./webpack-bin-permissions");
 
 const config = require("./config");
 const eslintConfig = require("./eslintrc.json");
@@ -131,23 +131,7 @@ function plugins() {
     );
   }
 
-  const executables = [];
-
-  if (copyFiles) {
-    for (const data of copyFiles) {
-      if (data.executable) {
-        executables.push(path.join(servicePath, data.to, data.from));
-      }
-    }
-  }
-
-  if (executables.length) {
-    plugins.push(
-      new WebpackShellPlugin({
-        onBuildEnd: [`chmod +x ${executables.join(" ")}`]
-      })
-    );
-  }
+  plugins.push(new WebpackBinPermission());
 
   // Ignore all locale files of moment.js
   plugins.push(new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/));
