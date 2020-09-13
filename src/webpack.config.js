@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const slsw = require("serverless-webpack");
 const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const PermissionsOutputPlugin = require("webpack-permissions-plugin");
+const WebpackShellPlugin = require("webpack-shell-plugin");
 
 const config = require("./config");
 const eslintConfig = require("./eslintrc.json");
@@ -143,8 +143,8 @@ function plugins() {
 
   if (executables.length) {
     plugins.push(
-      new PermissionsOutputPlugin({
-        buildFiles: executables
+      new WebpackShellPlugin({
+        onBuildEnd: [`chmod +x ${executables.join(" ")}`]
       })
     );
   }
