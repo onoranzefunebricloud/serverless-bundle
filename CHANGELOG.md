@@ -1,3 +1,10 @@
+## [4.4.2](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.4.1...4.4.2) (2020-09-13)
+
+
+### Bug Fixes
+
+* missing dependency ([e9f8ea0](https://github.com/onoranzefunebricloud/serverless-bundle/commit/e9f8ea06be0432e3b62361674f568348ce4a3b22))
+
 ## [4.4.1](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.4.0...4.4.1) (2020-09-13)
 
 # [4.4.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.3.0...4.4.0) (2020-09-13)
