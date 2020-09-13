@@ -1,3 +1,9 @@
+# [4.1.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.0.0...4.1.0) (2020-09-13)
+
+### Features
+
+- restore automated builds ([49927c4](https://github.com/onoranzefunebricloud/serverless-bundle/commit/49927c440b5435cb9406b5fd37f6f14c69020254))
+
 # [1.5.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/1.4.3...1.5.0) (2020-09-09)
 
 ### Features
