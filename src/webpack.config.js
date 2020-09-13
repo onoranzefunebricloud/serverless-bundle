@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const slsw = require("serverless-webpack");
 const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const PermissionsOutputPlugin = require("webpack-permissions-plugin");
 
 const config = require("./config");
 const eslintConfig = require("./eslintrc.json");
@@ -126,6 +127,24 @@ function plugins() {
             from: path.join(servicePath, data.from)
           };
         })
+      })
+    );
+  }
+
+  const executables = [];
+
+  if (copyFiles) {
+    for (const data of copyFiles) {
+      if (data.executable) {
+        executables.push(path.join(servicePath, data.to));
+      }
+    }
+  }
+
+  if (executables.length) {
+    plugins.push(
+      new PermissionsOutputPlugin({
+        buildFiles: executables
       })
     );
   }
