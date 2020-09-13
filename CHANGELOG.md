@@ -1,3 +1,10 @@
+# [4.5.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.4.2...4.5.0) (2020-09-13)
+
+
+### Features
+
+* use custom plugin to enable bin chmod ([029ae81](https://github.com/onoranzefunebricloud/serverless-bundle/commit/029ae81ce352ae17db9297420974cac32d351249))
+
 ## [4.4.2](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.4.1...4.4.2) (2020-09-13)
 
 
