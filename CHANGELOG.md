@@ -1,3 +1,5 @@
+## [4.4.1](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.4.0...4.4.1) (2020-09-13)
+
 # [4.4.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.3.0...4.4.0) (2020-09-13)
 
 
