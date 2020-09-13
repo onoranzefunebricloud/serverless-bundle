@@ -1,3 +1,11 @@
+# [4.2.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.1.0...4.2.0) (2020-09-13)
+
+
+### Features
+
+* add executable property ([02e097b](https://github.com/onoranzefunebricloud/serverless-bundle/commit/02e097be5c7a7450d97a685e4f49290fa8806664))
+* add executable property ([f4091f9](https://github.com/onoranzefunebricloud/serverless-bundle/commit/f4091f962dda7deef0ad2641e7c5296a61afa21c))
+
 # [4.1.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.0.0...4.1.0) (2020-09-13)
 
 ### Features
