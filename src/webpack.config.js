@@ -136,7 +136,7 @@ function plugins() {
   if (copyFiles) {
     for (const data of copyFiles) {
       if (data.executable) {
-        executables.push(path.join(servicePath, data.to));
+        executables.push(path.join(servicePath, data.to, data.from));
       }
     }
   }
