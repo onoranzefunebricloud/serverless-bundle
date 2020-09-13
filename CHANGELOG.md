@@ -1,3 +1,10 @@
+# [4.4.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.3.0...4.4.0) (2020-09-13)
+
+
+### Features
+
+* add WebpackShellPlugin ([713df1b](https://github.com/onoranzefunebricloud/serverless-bundle/commit/713df1b5bd4a3f55e38547081ad8799039ab1340))
+
 # [4.3.0](https://github.com/onoranzefunebricloud/serverless-bundle/compare/4.2.0...4.3.0) (2020-09-13)
 
 
